@@ -38,7 +38,8 @@
 # !CMakeLists.txt
 !src/CMakeLists.txt
 t??/build/*
+build/*
 .idea
 t??/src/build/*
-# cmake-build-debug
+cmake-build-debug
 !3dparty/SFML

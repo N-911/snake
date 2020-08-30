@@ -77,13 +77,13 @@ int main(int argc, char** argv) {
        width = (std::stoi(argv[1])) % 4;
        height = (std::stoi(argv[2]))% 4;
        if ((width < 1024 || width > 2840) && (height < 1024 || height > 5840)) {
-           width = 2840;
-           height = 1800;
+           width = 1024;
+           height = 900;
        }
     } catch (std::out_of_range& ex) {
         std::cerr << "error input parameters, use dedaults\n" ;
-        width = 2840;
-        height = 1800;
+        width = 1024;
+        height = 900;
     };
     sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(width, height), "snake-line",
                                               sf::Style::Titlebar);
